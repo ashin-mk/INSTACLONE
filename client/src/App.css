@@ -1,0 +1,168 @@
+.headers{
+  display: flex;
+  justify-content: space-between;
+ padding:1em 4em .5em 4em;
+  border-bottom: 2px solid rgb(158, 155, 155);
+}
+#uploadfile{
+  position: relative;
+  opacity: 0;
+  width: 70px;
+  margin-left:-70px;
+  overflow: hidden;
+}
+.card{
+  border: 2px solid rgb(179, 173, 173);
+  height: 10em;
+  width: 30em;
+  margin: 3em 30em;
+}
+.form-inputs{
+  margin:.8em 2em
+}
+#Description{
+  width: 30em;
+}
+#Author{
+  width: 13.6em;
+  margin-right:1.1em ;
+}
+#Location{
+  width:13.6em;
+  margin-left: 1.1em;
+}
+#readonly{
+  width:25.4em
+}
+#postbutton{
+  margin: 0em 16em;
+  width:50px;
+}
+.landingpage{
+  display:flex;
+  margin:3em 15em;
+}
+.landingimage{
+  height: 40em;
+  width: 30em;
+}
+.landingbutton{
+  margin:15em 10em;;
+  text-align: center;
+ height: 100px;
+width: 250px;}
+.landingbutton h1{
+  color: green;
+}
+button:hover{
+  cursor: pointer;
+}
+.landingbutton button{
+  height:30px;
+  font-size: larger;
+  width:80px;
+  color:green;
+  border: green solid;
+  border-radius: 5px;
+  background-color: white;
+}
+.post{
+    height: 26em;
+width: 30em;
+margin:1.5em 34em;
+border: 1px solid rgb(215, 212, 212);
+border-radius: 5px;
+overflow: hidden;
+}
+.image{
+    height: 20px;
+    width: 25px;
+    margin-right: -10px;
+}
+.image1{
+    height: 15em;
+    width:30.1em;
+    margin:0px -13.8px -11px -13px ;
+}
+.Gc{
+    display: flex;
+    justify-content: space-between;
+    margin: 13px;
+}
+span img{
+    padding: 10px;
+}
+.name{
+    font-weight: bold;
+    text-align: left;
+    margin-left: 15px;
+    font-size: 18px;
+}
+.location{
+    opacity: .65;
+    text-align: left;
+    font-size: 15px;
+    margin-left: 15px;
+}
+.image ,.likes,.date{
+    opacity:.85;
+}
+.likes{
+    height: 4px;
+    margin-bottom:13px;
+    margin-top: -12px;
+    margin-left: 5px;
+}
+.desc{
+    margin-left: 14px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:1200px) {
+  .post{
+    margin:1.5em 20em;
+    width: 28em;
+  }
+  .headers{
+    padding: 0px;
+    width: 1200px;;
+  }
+  .card{
+    margin: 3em 26em;
+width: 28em;
+  }
+  .landingpage{
+    display: flex;
+    flex-direction: column;
+    margin: 0em;
+  }
+  .form-inputs{
+    margin: .8em .2em;
+  }
+
+}
+@media (max-width:750px) {
+  .post{
+    margin:1.5em 8em
+  }
+  .headers{
+    padding: 0px;
+    width: 750px;;
+  }
+  .card{
+    margin: 3em 12em;
+  }
+}
+@media (max-width:450px) {
+  .post{
+    margin:1.5em 0em
+  }
+  .headers{
+    width: 450px;
+  }
+  .card{
+    margin: 3em 0em;
+  }
+}
