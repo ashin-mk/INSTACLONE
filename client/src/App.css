@@ -166,3 +166,40 @@ width: 28em;
     margin: 3em 0em;
   }
 }
+#Prevbutt{
+  position: absolute;
+  top:600px;
+  left: 710px;
+  padding: 10px;
+  background-color: aqua;
+  border-radius: 5px;
+  border-style: none;
+  color: aliceblue;
+}
+#Nextbutt{
+  position: absolute;
+  top:600px;
+  left: 790px;
+  padding: 10px;
+  background-color: aqua;
+  border-radius: 5px;
+  color: aliceblue;
+  border-style: none;
+}
+#Nextbutt:hover{
+  background-color: crimson;
+ 
+}
+#Prevbutt:hover{
+  background-color: crimson; 
+}
+#pageNum{
+  position: absolute;
+  top:600px;
+  left: 760px;
+  padding: 10px;
+  background-color: aqua;
+  border-radius: 5px;
+  color: aliceblue;
+  border-style: none;
+}

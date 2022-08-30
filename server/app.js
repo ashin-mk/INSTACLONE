@@ -7,6 +7,7 @@ const Users=require("./Formschema")
 else console.log("err runnung server")})
 
  app.use(express.json({limit: "30mb" ,extended:true}))
+ app.use(express.urlencoded({extended:false}))
  app.use(cors())
 
  mongoose.connect("mongodb+srv://Ashindeedu:ashin123@ashinmk.rxye7.mongodb.net/Instaclone?retryWrites=true&w=majority",(
@@ -14,7 +15,8 @@ else console.log("err runnung server")})
       ()=>console.log("err")))
 
  app.post("/upload",async(req,res)=>{
-   await Users.create({Image:req.body.image,Location:req.body.location,Name:req.body.author,Description:req.body.description})
+   await Users.create({Image:req.body.image,Location:req.body.location,Name:req.body.author,Description:req.body.description,
+   Date:new Date()})
     res.send("done")
  })
  app.get("/posts",async(req,res)=>{

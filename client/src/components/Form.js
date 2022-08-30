@@ -14,7 +14,7 @@ setdata({...data, [id] : e.target.value })
 
  }
 const handlepost=()=>{
-  Axios.post("https://ashin-instaclone-server.herokuapp.com/upload",data).then(()=>{
+  Axios.post("http://localhost:3001/upload",data).then(()=>{
   })
   .catch((err)=>{
     console.log(err)
